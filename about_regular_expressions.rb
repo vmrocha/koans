@@ -28,7 +28,7 @@ class AboutRegularExpressions < Neo::Koan
   def test_asterisk_means_zero_or_more
     assert_equal "abb", "abbcccddddeeeee"[/ab*/]
     assert_equal "a", "abbcccddddeeeee"[/az*/]
-    assert_equal nil, "abbcccddddeeeee"[/z*/]
+    assert_equal "", "abbcccddddeeeee"[/z*/]
 
     # THINK ABOUT IT:
     #
